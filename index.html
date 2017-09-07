@@ -27,7 +27,7 @@
                 <th>Details</th>
                 <th>Remove</th>
               </tr>
-             <tr ng-repeat="course in listings | filter:q as results">
+             <tr ng-repeat="course in listings | orderBy: 'code' | filter:q as results">
 
                  <td>
                      {{course.code}}
