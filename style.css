@@ -1,0 +1,29 @@
+#searchBar {
+  margin: 15px 10px;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.tableWrapper.ng-move,
+.tableWrapper.ng-enter,
+.tableWrapper.ng-leave {
+  transition:all linear 0.5s;
+}
+
+.tableWrapper.ng-leave.ng-leave-active,
+.tableWrapper.ng-move,
+.tableWrapper.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.tableWrapper.ng-leave,
+.tableWrapper.ng-move.ng-move-active,
+.tableWrapper.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:30px;
+}
+
